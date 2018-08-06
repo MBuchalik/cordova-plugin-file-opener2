@@ -35,6 +35,11 @@
         </config-file>
         <source-file src="src/ios/FileOpener2.m" />
         <header-file src="src/ios/FileOpener2.h" />
+
+		<config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription">
+			<string>This app needs access to the photo library to store images.</string>
+		</config-file>
+		<resource-file src="src/ios/de.lproj/file-opener.strings" target="de.lproj/file-opener.strings" />
     </platform>
 
 	<!-- WP8 -->
@@ -46,7 +51,7 @@
 		</config-file>
 		<source-file src="src/wp8/FileOpener2.cs" />
 	</platform>
-	
+
 
 	 <!-- windows -->
     <platform name="windows">
